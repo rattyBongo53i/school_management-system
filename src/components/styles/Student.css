@@ -1,0 +1,38 @@
+.middle{
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.middle .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem 1rem;
+}
+.middle .top h1{
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.middle .top div.add-student button {
+    width: 100%;
+    padding: 0.5rem 0.7rem;
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: background-color 0.3s ease;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+.middle .top div.add-student button:hover{
+    background-color: var(--color-primary-variant);
+    /* color: black; */
+}
+
+table{
+    height: 60vh;
+    overflow: hidden;
+    overflow-y: auto;
+}

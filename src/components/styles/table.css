@@ -1,0 +1,41 @@
+table{
+    width: 100%;
+ 
+    
+}
+table th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    width: 10rem;
+}
+table th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: var(--color-primary);
+    color: white;
+}
+table tr:hover {background-color: #ddd; }
+table tr:nth-child(even){background-color: #f2f2f2;}
+tr th:first-child,
+tr td:last-child {
+   width: 8%;
+}
+td div.action{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0.3rem 0.4rem;
+}
+
+td div.action button.edit, td div.action button.delete{
+    background-color: var(--color-primary);
+    color: white;
+    padding: 0.3rem 0.5rem;
+    border: none;
+    cursor: pointer;
+    scale: 0.8;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+}

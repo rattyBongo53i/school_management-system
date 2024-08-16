@@ -1,0 +1,193 @@
+.wrapper-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 17rem;
+    /* border: 2px solid red; */
+    height: 60vh; /* remove hieght after */
+    padding: 0.2rem 0.3rem;
+    gap: 0.8rem;
+    border-radius: 4px;
+}
+
+.wrapper-container .left {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width: 100%;
+    padding: 0.2rem 0.3rem;
+    position: relative;
+}
+.wrapper-container .left .banner {
+    height: 16.8vh;
+    width: 100%;
+    background-color: rgb(235, 223, 223);
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    position: relative;
+   
+}
+.wrapper-container .left .banner img{
+    width: 23rem;
+    height: 13rem;
+    object-fit: cover;
+    position: absolute;
+    top: -3.5rem;
+    right: -4.2rem;
+    scale: 0.4;
+}
+
+
+.wrapper-container .right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    padding: 0.4rem 0.3rem;
+    position: relative;
+}
+
+.wrapper-container .right .estimated-fees{
+
+    width: 100%;
+    padding: 0.5rem 0.5rem;
+    background-color: rgb(242, 242, 242);
+    border-radius: 12px;
+    height: 46vh;
+    /* border: 2px solid  red; */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    position: relative;
+
+}
+
+.wrapper-container .right .estimated-fees .header{
+    font-size: 0.9rem;
+    font-weight: 500;
+
+}
+
+.estimated-fees .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0.7rem 1rem;
+    position: absolute;
+    bottom : 0;
+}
+.estimated-fees .footer .collections {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    scale: 0.9;
+}
+.estimated-fees .footer .remainings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    scale: 0.9;
+}
+
+.time-table{
+    margin-top: -10rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+@media only screen and (max-width: 600px) {
+    .wrapper{
+        grid-template-columns: 1fr;
+    }
+    .wrapper .left{
+        display: none;
+    }
+    .wrapper .middle{
+        width: 100%;
+    }
+    .wrapper .right{
+        display: none;
+    }
+}
+    */
+
+/* Small devices (portrait tablets and large phones, 600px and up) *
+@media only screen and (min-width: 600px) {
+    .wrapper{
+        grid-template-columns: 1fr;
+    }
+    .wrapper .left{
+        display: none;
+    }
+    .wrapper .middle{
+        width: 100%;
+    }
+    .wrapper .right{
+        display: none;
+    }
+}
+*/
+
+/* Medium devices (landscape tablets, 768px and up) *
+@media only screen and (min-width: 768px) {
+    .wrapper{
+       grid-template-columns: 5rem auto;
+    }
+    .wrapper .left{
+        display: flex;
+    }
+    .wrapper .left .small{
+        display: flex;
+    }
+    .wrapper .right{
+        display: none;
+    }
+
+}
+*/
+
+/* Large devices (laptops/desktops, 992px and up) *
+@media only screen and (min-width: 992px) {
+    .wrapper{
+    grid-template-columns: 6rem auto 22rem;
+    }
+    .wrapper .left{
+        display: flex;
+    }
+    .wrapper .left .small{
+        display: none;
+    }
+    .wrapper .right{
+        display: flex;
+    }
+}
+*/
+
+/* Extra large devices (large laptops and desktops, 1200px and up) *
+@media only screen and (min-width: 1200px) {
+    .wrapper{
+    grid-template-columns: 18rem auto 40rem
+    }
+} */

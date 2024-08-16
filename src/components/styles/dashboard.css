@@ -1,0 +1,12 @@
+.main-dashboard {
+    display: grid;
+    grid-template-columns: 12rem auto;
+    width: 100%;
+    gap: 0.8rem;
+    overflow: hidden;
+}
+
+.main-dashboard .left {
+    border-right: 1px solid #ddd;
+    /* padding-right: 1rem; */
+}
