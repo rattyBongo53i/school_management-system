@@ -9,16 +9,18 @@ import { useEffect } from 'react';
 
 
 const Dashboard = () => {
-    const { currentUser, setCurrentUser, auth, token } = useAuth();
+    const { currentUser } = useAuth();
     const navigate = useNavigate();
+    console.log("system outside Dashboard")
     
-    useEffect(() => {
-    if (!auth) {
-        navigate("/login");
-        }
-        let person = JSON.parse(localStorage.getItem("user"));
-        setCurrentUser(person);
-    });
+    // useEffect(() => {
+    // console.log(" inside Dashboard")
+
+    // if (!currentUser) {
+    //     navigate("/login");
+    //     }
+ 
+    // });
     // console.log("tokens: ");
     // console.log(token);
 

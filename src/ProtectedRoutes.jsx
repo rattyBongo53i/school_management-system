@@ -3,14 +3,14 @@ import { Navigate, Outlet } from 'react-router-dom'
 import { useAuth } from './Context/useAuth'
 
 const ProtectedRoutes = () => {
-  const { auth } = useAuth()
-
+  const {  currentUser } = useAuth()
+  console.log(" privateRoute here")
 
   
   return (
     <>
 
-      {auth ? <Outlet />  : <Navigate to="/login" />}
+      {currentUser ? <Outlet />  : <Navigate to="/login" />}
 
     </>
   )

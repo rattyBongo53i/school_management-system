@@ -7,6 +7,7 @@ import Router from './Router';
 
 const App = () => {
 
+  console.log("system rebooted")
 
   return (
     <>

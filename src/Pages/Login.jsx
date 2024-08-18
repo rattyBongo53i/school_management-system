@@ -9,6 +9,7 @@ import logo from '../assets/logo.png';
 
 import { useAuth } from "../Context/useAuth";
 import { motion } from "framer-motion";
+import { useEffect } from "react";
 
 const Login = () => {
 
@@ -20,6 +21,8 @@ const Login = () => {
     const [successMessage, setSuccessMessage] = useState(""); 
 
     const { login } = useAuth();
+
+
 
     console.log('login page')
     const closBtn = () => {

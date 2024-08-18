@@ -8,16 +8,17 @@ export const AuthProvider = ({ children }) => {
   const [token, setToken] = useState([""]);
   const [auth, setAuth] = useState(false);
   const [name, setName] = useState("Isaac Z. Schlueter");
+  console.log(" outside authProvider")
+
 
   useEffect(() => {
-    const token = localStorage.getItem("token");
-    if (token && token.length > 0 ){
-      setAuth(true);
-      // let userResult = JSON.parse(localStorage.getItem("user"));
-      // console.log('user.array');
-      // let name = 
-      // const { user } = userResult;
-      // console.log(user);
+    // const token = localStorage.getItem("token");
+    const savedUser = JSON.parse(localStorage.getItem('user'));
+    console.log("inside authProvider useEffect")
+    console.log('current user')
+  
+    if ( savedUser.length > 0){
+      setCurrentUser(savedUser)
     }
   }, []);
 
@@ -38,7 +39,7 @@ export const AuthProvider = ({ children }) => {
       let result = await response.json();
 
       const { user, token } = result;
-
+        
       if (user.id) {
         console.log("login successful")
         setAuth(true);
@@ -46,7 +47,7 @@ export const AuthProvider = ({ children }) => {
         localStorage.setItem("token", token);
         localStorage.setItem("user", JSON.stringify(user));
         setCurrentUser(user);
-        // console.log(name);
+        console.log(user.name);
          return true;
       } else {
         return false;
